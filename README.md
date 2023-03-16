@@ -44,3 +44,38 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Features
+- an electric blue line running across the screen similar to an ekg wave across a black screen (what library should you use)
+  - as you hover over the blue line, it generates static showing a neo noir city underneath it. 
+  - when you click on the blue line, the black fades to reveal a beautiful dystopian city skyline 
+
+- add music that accompanies the images
+
+- potentially add 3-d animations using three js
+  - media for inspiration
+    - blade runner
+    - altered carbon
+    - tron
+
+- chat gpt bot
+  - may user can input something funny and get a humorous response
+
+- dynamically change the city skyline in response to a user's input
+
+## Website based on ai design 
+
+- good way of advertising to companies that you are able to engineer a website based on a prototype. 
+  - emulates an agile environment
+
+
+- code out the different components 
+  - background 908F92
+  - font Barlow Condensed Extra Light
+  - shadowed box D9DADC
+    - create box outline
+    - apply shadow
+  - cloud image with macbook
+  - hero section
+  - nav bar
+  - footer
