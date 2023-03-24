@@ -3,13 +3,38 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ErrorPage } from './error-page';
+import { Projects } from './pages/Projects';
+import { SolarSystem } from './pages/SolarSystem';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+//each time a new page is added, we connect it to a router in the router ins.
+const router = createBrowserRouter([
+  {
+
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+
+  },
+  {
+    path: "projects",
+    element: <Projects />
+  },
+  {
+    //TODO: figure out whether the route should be hyphenated here or not
+    path: "solar-system",
+    element: <SolarSystem />
+  },
+])
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
