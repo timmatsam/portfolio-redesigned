@@ -32,11 +32,8 @@
   border-radius: 10px;
   box-shadow:  0px 0px 100px 20px #48474C;
   display: grid;
+  grid-template-rows: 1fr 7fr;
   grid-template-columns: [first] 40% [second] 60%;
   justify-items: center;
   align-items: center;
-}
-
-#hero-section {
-  padding-left: 10px;
 }

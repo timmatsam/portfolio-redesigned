@@ -1,16 +1,19 @@
 import * as React from 'react';
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 export const NavBar = () => {
-    return (<nav>
-        <ul>
-            <li>
-                <NavLink to="/">Home</NavLink>
+    return (<nav className="flex flex-wrap items-center justify-between p-6 col-span-2">
+        <ul className="flex justify-end items-center list-none">
+            <li className="mr-3">
+                <Link className="  hover:text-gray-400 hover:font-semibold" to="/">Home</Link>
             </li>
-            <li>
-                <NavLink to="/projects">Projects</NavLink>
+            <li className="mr-3">
+                <Link className="  hover:text-gray-400 hover:font-semibold" to="/about">About</Link>
             </li>
-            <li>
-                <NavLink to="/solar-system">Solar System</NavLink>
+            <li className="mr-3">
+                <Link className="  hover:text-gray-400 hover:font-semibold" to="/projects">Projects</Link>
+            </li>
+            <li className="mr-3">
+                <Link className="  hover:text-gray-400 hover:font-semibold" to="/solar-system">Anti Solar System</Link>
             </li>
         </ul>
     </nav>);

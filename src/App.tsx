@@ -1,22 +1,19 @@
 import React from 'react';
 import './App.css';
-import image from './minimalist-rain-web-design.png'
-import HeroSection from './HeroSection';
 import { NavBar } from './NavBar';
+import { Outlet } from 'react-router-dom';
 
 
+//An <Outlet> should be used in parent route elements to render their child route elements. 
 function App() {
   return (
 
     <div className="App">
       <div className="Box">
         <NavBar />
-        <HeroSection />
-        <img alt='rain-falling-down-on-macbook' src={image} className="w-4/5" />
+        <Outlet />
       </div>
     </div>
   );
 }
-
-
 export default App;
