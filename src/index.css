@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../public/Barlow-Condensed-ExtraLight/barlowcondensed/BarlowCondensed-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App {
+  background-color: #949496;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow Condensed", Times, serif;;
+}
+
+.Box {
+  /* background-color: #DFE0E2; */
+  background: linear-gradient(to bottom, #DFE0E2, #ECECEE);
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow:  0px 0px 100px 20px #48474C;
+}

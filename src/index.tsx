@@ -9,6 +9,7 @@ import { Projects } from './pages/Projects';
 import { SolarSystem } from './pages/SolarSystem';
 import { LandingPage } from './pages/LandingPage';
 import { About } from './pages/About';
+import { Thesis } from './pages/Thesis';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />
+      },
+      {
+        path: "thesis",
+        element: <Thesis />
       }
     ]
   },

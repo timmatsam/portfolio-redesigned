@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
 import { NavBar } from './NavBar';
 import { Outlet } from 'react-router-dom';
+import { Footer } from './Footer';
 
 
 //An <Outlet> should be used in parent route elements to render their child route elements. 
@@ -13,6 +13,7 @@ function App() {
         <NavBar />
         <Outlet />
       </div>
+      <Footer />
     </div>
   );
 }
