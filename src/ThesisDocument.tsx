@@ -5,6 +5,9 @@ import thesis from './thesis.pdf';
 
 type NumPagesType = number;
 
+//TODO: Change the overflow so that the pdf and next/back buttons are always visible
+//TODO: Make the previous and next buttons not visible based on first and last page
+//TODO: Add spinner for pdf when loading
 export const ThesisDocument = () => {
     const [numPages, setNumPages] = useState<NumPagesType>(0);
     const [pageNumber, setPageNumber] = useState(1);
