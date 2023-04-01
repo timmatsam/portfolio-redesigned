@@ -27,3 +27,4 @@ export const Projects = () => {
 }
 
 //TODO: potentially turn this into a grid to compare the differences between the flexbox and grid layouts
+//TODO: provide a link to the github repo for each project
