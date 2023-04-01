@@ -1,6 +1,8 @@
 import * as React from 'react';
+import { ThesisDocument } from '../ThesisDocument';
+
 export const Thesis = () => {
     return (
-        <h1>Thesis</h1>
+        <ThesisDocument />
     )
 }
