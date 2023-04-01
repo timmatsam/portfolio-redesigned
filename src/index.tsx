@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ErrorPage } from './error-page';
 import { Projects } from './pages/Projects';
-import { SolarSystem } from './pages/SolarSystem';
 import { LandingPage } from './pages/LandingPage';
 import { About } from './pages/About';
 import { Thesis } from './pages/Thesis';
@@ -31,10 +30,6 @@ const router = createBrowserRouter([
       {
         path: "projects",
         element: <Projects />
-      },
-      {
-        path: "solar-system",
-        element: <SolarSystem />
       },
       {
         path: "about",

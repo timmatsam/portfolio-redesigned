@@ -15,9 +15,6 @@ export const NavBar = () => {
             <li className="mr-3">
                 <Link className="  hover:text-gray-400 hover:font-semibold" to="/thesis">Thesis</Link>
             </li>
-            <li className="mr-3">
-                <Link className="  hover:text-gray-400 hover:font-semibold" to="/solar-system">Anti Solar System</Link>
-            </li>
         </ul>
     </nav>);
 }
