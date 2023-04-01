@@ -9,4 +9,5 @@ export const LandingPage = () => {
         </div>
     );
 }
-
+//TODO: potentially change the landing page image to that of a different one.
+//!: There seems to be a state issue with the react-pdf library. When switching from the thesis page to the homepage, the landing page hero section moves from the top of the box to the bottom of the box. This is a bug that I will need to fix in the future..

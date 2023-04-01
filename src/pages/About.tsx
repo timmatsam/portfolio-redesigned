@@ -8,3 +8,5 @@ export const About = () => {
         </div>
     )
 }
+
+//TODO: Add an about section for my current programming interests. 
