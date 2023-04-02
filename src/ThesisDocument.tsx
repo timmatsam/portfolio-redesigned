@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
+import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.vite.js';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 import thesis from './thesis.pdf';
 
@@ -34,6 +35,7 @@ export const ThesisDocument = () => {
             <Document
                 file={thesis}
                 onLoadSuccess={onDocumentLoadSuccess}
+                onLoadError={console.error}
             >
                 <Page
                     pageNumber={pageNumber}
