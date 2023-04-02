@@ -1,1 +1,1 @@
-web: pnpm serve
+web: pnpm deploy
