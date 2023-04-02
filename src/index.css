@@ -18,7 +18,7 @@ code {
 
 @font-face {
   font-family: "Barlow Condensed";
-  src: url("../Barlow-Condensed-ExtraLight/barlowcondensed/BarlowCondensed-Regular.ttf");
+  src: url("/Barlow-Condensed-ExtraLight/barlowcondensed/BarlowCondensed-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
