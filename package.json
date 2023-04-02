@@ -26,7 +26,8 @@
     "tailwind": "npx tailwindcss -i ./src/index.css -o ./public/output.css --watch",
     "start": "vite",
     "build": "tsc && vite build",
-    "deploy": "npm run build && serve -s build",
+    "tailwind-prod": "npx tailwindcss -i ./src/index.css -o ./public/output.css",
+    "deploy": "pnpm tailwind-prod && pnpm build && serve -s build",
     "serve": "vite preview"
   },
   "eslintConfig": {
