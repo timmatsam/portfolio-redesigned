@@ -13,22 +13,21 @@
     "@types/node": "^16.18.14",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "express": "^4.18.2",
     "pdfjs-dist": "^3.4.120",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-pdf": "^6.2.2",
     "react-router-dom": "^6.9.0",
-    "serve": "^14.2.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/index.css -o ./public/output.css --watch",
     "start": "vite",
-    "build": "tsc && vite build",
-    "tailwind-prod": "npx tailwindcss -i ./src/index.css -o ./public/output.css",
-    "deploy": "pnpm tailwind-prod && pnpm build && serve -s build",
-    "serve": "vite preview"
+    "build-prod": "tsc && vite build",
+    "build-tailwind-prod": "npx tailwindcss -i ./src/index.css -o ./public/output.css",
+    "deploy": "pnpm build-tailwind-prod && pnpm build-prod && node server.js"
   },
   "eslintConfig": {
     "extends": [
