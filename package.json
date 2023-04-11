@@ -2,9 +2,6 @@
   "name": "portfolio-redesigned",
   "version": "0.1.0",
   "private": true,
-  "pnpm": {
-    "version": "7.0.0-rc.9"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
