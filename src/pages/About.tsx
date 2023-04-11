@@ -1,5 +1,5 @@
 import * as React from 'react';
-import image from '../headshot.png'
+import image from '../assets/headshot.png'
 export const About = () => {
     return (
         <div className='flex flex-row flex-auto w-full h-3/4 px-10 items-center'>
