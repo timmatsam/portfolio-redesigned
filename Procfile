@@ -1,1 +1,1 @@
-web: pnpm deploy
+web: npm run deploy
