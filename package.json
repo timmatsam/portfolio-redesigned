@@ -26,10 +26,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/index.css -o ./public/output.css --watch",
-    "start": "vite",
+    "start-local": "concurrently \"pnpm vite-dev\" \"pnpm tailwind-watch\"",
+    "tailwind-watch": "tailwindcss -i ./src/index.css -o ./public/output.css --watch",
+    "vite-dev": "vite",
     "build-prod": "tsc && vite build",
-    "build-tailwind-prod": "npx tailwindcss -i ./src/index.css -o ./public/output.css",
+    "build-tailwind-prod": "tailwindcss -i ./src/index.css -o ./public/output.css",
     "deploy": "pnpm build-tailwind-prod && pnpm build-prod && node server.js"
   },
   "eslintConfig": {
@@ -53,6 +54,7 @@
   "devDependencies": {
     "@types/react-pdf": "^6.2.0",
     "@vitejs/plugin-react": "^3.1.0",
+    "concurrently": "^8.0.1",
     "tailwindcss": "^3.2.7",
     "vite": "^4.2.1",
     "vite-plugin-svgr": "^2.4.0",
