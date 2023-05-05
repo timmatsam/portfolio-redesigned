@@ -1,12 +1,16 @@
-import * as React from 'react';
-import haircutzImage from '../assets/haircutz.png'
-import outdoorImage from '../assets/outdoor.png'
-
-export const Projects = () => {
+import haircutzImage from '../public/haircutz.png'
+import outdoorImage from '../public/outdoor.png'
+import Head from 'next/head'
+import Image from 'next/image'
+const Projects = () => {
     return (
         <div className='flex flex-col justify-around items-start w-full h-5/6 '>
+              <Head>
+          <title>Projects</title>
+        </Head>
             <div className='flex flex-row '>
-                <img alt='haircutz' src={haircutzImage} className='shrink w-6/12 h-6/12 pl-10' />
+            <Image alt='haircutz' src={haircutzImage} className='shrink w-6/12 h-6/12 pl-10' />
+
                 <div className='px-10'>
                     <h3 className='font-semibold'>Haircutz</h3>
                     <p>A 1v1 online real time strategy game.</p>
@@ -14,8 +18,7 @@ export const Projects = () => {
                 </div>
             </div>
             <div className='flex flex-row '>
-
-                <img alt='outdoor' src={outdoorImage} className='shrink w-6/12 h-6/12 pl-10' />
+                <Image alt='outdoor' src={outdoorImage} className='shrink w-6/12 h-6/12 pl-10' />
                 <div className='px-10'>
                     <h3 className='font-semibold'>Outdoor Equiment Inc. (OEI)</h3>
                     <p>An ecommerce website, i.e. a recreation of REI, a well known retailer for outdoors enthusiasts. </p>
@@ -25,6 +28,6 @@ export const Projects = () => {
         </div>
     );
 }
-
+export default Projects;
 //TODO: potentially turn this into a grid to compare the differences between the flexbox and grid layouts
 //TODO: provide a link to the github repo for each project

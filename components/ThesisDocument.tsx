@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.vite.js';
+import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack5.js';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 import thesis from './thesis.pdf';
