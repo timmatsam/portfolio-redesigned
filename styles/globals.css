@@ -29,9 +29,10 @@ code {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  font-family: "Barlow Condensed", Times, serif;;
+  font-family: "Barlow Condensed", Times, serif;
+  flex-direction: column;
 }
 
 .Box {

@@ -1,6 +1,7 @@
 ### Technologies Used
 
 This app was created using next.js, a framework built on top of react.js that offers server side rendering and other features.
+Deployed using vercel.
 
 Pre-requisites:
 Install pnpm globally using npm install -g pnpm
