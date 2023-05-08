@@ -1,20 +1,22 @@
 import { Footer } from "./Footer";
-import { Navbar } from "./Navbar";
 import { ReactNode } from 'react';
+import { Navbar } from "./Navibar";
 
 interface LayoutProps {
-   children?: ReactNode;
+    children?: ReactNode;
 }
 
 
-const Layout = ({children}: LayoutProps) => {
-    return ( <div className="App">
-        <div className="Box">
-            <Navbar />
-        {children}
+const Layout = ({ children }: LayoutProps) => {
+    return (
+        <div className="App">
+            <div className="Box">
+                <Navbar />
+                {children}
+            </div>
+            <Footer />
         </div>
-        <Footer />
-    </div> );
+    );
 }
- 
+
 export default Layout;
