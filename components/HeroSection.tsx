@@ -1,3 +1,4 @@
+import { RoughNotation, RoughNotationGroup, } from 'react-rough-notation'
 
 const HeroSection = () => {
     return (
@@ -5,19 +6,28 @@ const HeroSection = () => {
             <h1>Tim Samuel</h1>
             <h3>Software Developer</h3>
             <p>A minimalist typesafe website, </p>
-            <div className="flex flex row">
-                <p className="mr-1">with designs inspired by</p>
-                <p className="underline">Midjourney</p>
-            </div>
-            <div className='flex flex-row'>
-                <p className="mr-1">Developed with </p>
-                <p className='underline mr-1'> Next.js </p>
-                <p className="mr-1">and Deployed through </p>
-                <p className='underline'>Vercel</p>
-            </div>
+            <RoughNotationGroup show={true}>
+                <div className="flex flex-row">
+                    <p className="mr-1">with designs inspired by</p>
+                    <RoughNotation type="underline" color='#448EE4' >
+                        <p>Midjourney</p>
+                    </RoughNotation>
+                </div>
+                <div className='flex flex-row'>
+                    <p className="mr-1">Developed with </p>
+
+                    <RoughNotation strokeWidth={2} type="circle" color='#448EE4'>
+                        <p className='mr-1'> Next.js </p>
+                    </RoughNotation>
+                    <p className="mr-1">and Deployed through </p>
+                    <RoughNotation strokeWidth={2} type="circle" color='#448EE4'>
+                        <p>Vercel</p>
+                    </RoughNotation>
+                </div>
+            </RoughNotationGroup>
 
 
-            
+
         </div>
     )
 }
