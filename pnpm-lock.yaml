@@ -37,6 +37,9 @@ dependencies:
   react-pdf:
     specifier: ^6.2.2
     version: 6.2.2(react-dom@18.2.0)(react@18.2.0)
+  react-rough-notation:
+    specifier: ^1.0.3
+    version: 1.0.3(react-dom@18.2.0)(react@18.2.0)
   react-router-dom:
     specifier: ^6.9.0
     version: 6.9.0(react-dom@18.2.0)(react@18.2.0)
@@ -1579,6 +1582,17 @@ packages:
       - worker-loader
     dev: false
 
+  /react-rough-notation@1.0.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-hMmyWNZTpPO9QOwj0g1SGgRiPWhJLhQje9ZtpQiAa1h0147oCL5C49OLXEZZYCxfMhXOqYBxSNkbndM09o3hUQ==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      rough-notation: 0.5.1
+    dev: false
+
   /react-router-dom@6.9.0(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-/seUAPY01VAuwkGyVBPCn1OXfVbaWGGu4QN9uj0kCPcTyNYgL1ldZpxZUpRU7BLheKQI4Twtl/OW2nHRF1u26Q==}
     engines: {node: '>=14'}
@@ -1656,6 +1670,10 @@ packages:
       glob: 7.2.3
     dev: false
     optional: true
+
+  /rough-notation@0.5.1:
+    resolution: {integrity: sha512-ITHofTzm13cWFVfoGsh/4c/k2Mg8geKgBCwex71UZLnNuw403tCRjYPQ68jSAd37DMbZIePXPjDgY0XdZi9HPw==}
+    dev: false
 
   /run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
