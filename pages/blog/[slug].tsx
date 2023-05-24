@@ -33,8 +33,9 @@ interface StaticProps {
   date: Date;
   tags: Array<string>;
 }
+
 export async function getStaticProps({ params }: GetStaticPropsContext) {
-  const slug = params.slug;
+  const slug = params?.slug;
   const { data, content } = matter(
     readFileSync(`./posts/${slug}.mdx`, "utf-8"),
   );
