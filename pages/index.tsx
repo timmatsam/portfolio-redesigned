@@ -18,10 +18,15 @@ const Home = () => (
         <Image src={sdev} alt="mb-pro-with-rain" width={350} />
       </div>
       <div className="self-end mx-5">
-        <RoughNotation type="highlight" color="#448EE4">
+        <RoughNotation
+          type="box"
+          color="rgb(6 182 212)"
+          show={true}
+          strokeWidth={3}
+        >
           <Link href={"/blog"}>
             <span className="flex flex-row space-x-1">
-              <p className="hover:text-blue-200">Check out the blog!</p>
+              <p className="hover:text-gray-400">{`Check out the blog here!`}</p>
             </span>
           </Link>
         </RoughNotation>

@@ -10,7 +10,7 @@ export const Navbar = () => {
         <li className="mr-3">
           <Link
             className={`hover:text-gray-400 hover:font-semibold ${
-              router.pathname === "/" ? "text-cyan-700 font-bold" : ""
+              router.pathname === "/" ? "text-cyan-600 font-bold" : ""
             }`}
             href="/"
           >
@@ -20,7 +20,7 @@ export const Navbar = () => {
         <li className="mr-3">
           <Link
             className={`hover:text-gray-400 hover:font-semibold ${
-              router.pathname === "/about" ? "text-cyan-700 font-bold" : ""
+              router.pathname === "/about" ? "text-cyan-600 font-bold" : ""
             }`}
             href="/about"
           >
@@ -30,7 +30,7 @@ export const Navbar = () => {
         <li className="mr-3">
           <Link
             className={`hover:text-gray-400 hover:font-semibold ${
-              router.pathname === "/projects" ? "text-cyan-700 font-bold" : ""
+              router.pathname === "/projects" ? "text-cyan-600 font-bold" : ""
             }`}
             href="/projects"
           >
