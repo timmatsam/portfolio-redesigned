@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div id="hero-section" className="flex flex-col items-center ">
+    <div id="hero-section" className="flex flex-col items-center px-5">
       <h1>Tim Samuel</h1>
       <h3>Software Developer</h3>
       <p>A minimalist typesafe website, </p>

@@ -65,5 +65,5 @@ const Layout = ({ children }: LayoutProps) => {
     </div>
   );
 };
-
+//TODO: remove bounce effects for the mobile version of the selected posts page
 export default Layout;
