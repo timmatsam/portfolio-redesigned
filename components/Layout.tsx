@@ -16,9 +16,13 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <div
-      className={`bg-gradient-to-b from-linear1 to-linear2 lg:from-main lg:to-main w-screen h-screen flex justify-center items-center flex-col ${barlow.variable} font-sans lg:space-y-20 overflow-y-auto`}
+      className={`bg-gradient-to-b from-linear1 
+      to-linear2 lg:from-main lg:to-main w-screen h-screen flex justify-center items-center flex-col ${barlow.variable} font-sans lg:space-y-14 `}
     >
-      <div className="lg:bg-gradient-to-b from-linear1 to-linear2 w-screen h-screen lg:w-3/5 lg:h-4/5 lg:rounded-xl lg:shadow-2xl shadow-shadow justify-self-start overflow-y-auto">
+      <div
+        className="lg:bg-gradient-to-b from-linear1 to-linear2 w-full md:w-3/4 h-screen lg:w-4/5 lg:h-4/5 lg:rounded-xl 
+      lg:shadow-2xl shadow-shadow justify-self-start lg:mt-10 xl:w-4/6 lg:overflow-y-auto"
+      >
         <Navbar />
         {children}
       </div>

@@ -10,12 +10,12 @@ import { RoughNotation } from "react-rough-notation";
 const Home = () => (
   <>
     <Head>
-      <title>Home</title>
+      <title>Tim's Portfolio</title>
     </Head>
-    <div className="flex flex-col items-center h-full space-y">
-      <div className="grid grid-flow-row w-3/4 h-3/5 lg:w-auto lg:h-auto  lg:grid-flow-col justify-items-center items-center flex-auto lg:gap-x-48">
+    <div className="flex flex-col items-center">
+      <div className="grid w-3/4 h-4/5 lg:w-auto lg:h-auto  lg:grid-flow-col justify-items-center items-center lg:space-x-20 md:-mt-3">
         <HeroSection />
-        <Image src={sdev} alt="mb-pro-with-rain" width={350} />
+        <Image src={sdev} alt="mb-pro-with-rain" width={350} className="" />
       </div>
       <div className="self-end mx-5 flex-auto">
         <RoughNotation
@@ -25,7 +25,7 @@ const Home = () => (
           strokeWidth={4}
         >
           <Link href={"/blog"}>
-            <span className="flex flex-row space-x-1">
+            <span className="flex flex-row space-x-1 ">
               <p className="hover:text-gray-400">{`Check out the blog here!`}</p>
             </span>
           </Link>
