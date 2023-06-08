@@ -14,19 +14,23 @@ export default function Post({
   tags,
   content,
 }: StaticProps) {
-  console.log("🚀 ~ file: [slug].tsx:17 ~ dateISO:", typeof dateISO);
-
   return (
     <>
       <Head>
         <title>{title}</title>
       </Head>
-      <article className="flex flex-col flex-wrap lg:mx-28  dark:text-gray-300">
-        <h1 className="text-2xl font-semibold mb-2 ">{title}</h1>
+      <article className="flex flex-col flex-wrap mx-4 lg:mx-28  dark:text-gray-300">
+        <h1 className="text-2xl font-semibold mb-2 ">
+          {title}
+        </h1>
         <p className="italic">
-          On <time dateTime={dateISO}>{date}</time>
+          On{" "}
+          <time dateTime={dateISO}>{date}</time>
         </p>
-        <Markdown children={content} className="flex flex-col space-y-4 " />
+        <Markdown
+          children={content}
+          className="flex flex-col space-y-4 "
+        />
       </article>
     </>
   );
